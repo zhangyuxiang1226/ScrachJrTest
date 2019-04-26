@@ -1,0 +1,25 @@
+{
+    "private": true,
+    "name": "scratchjr",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "hs -p 4000 -c-1 -o http://127.0.0.1:4000/editions/free/src/home.html",
+        "watch": "parcel watch --no-source-maps --no-cache --no-hmr --public-url ./ -d editions/free/src -o app.bundle.js src/entry/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "intl": "^1.2.5",
+        "intl-messageformat": "^2.2.0",
+        "jszip": "^3.2.1",
+        "parcel-bundler": "^1.12.3",
+        "snapsvg": "^0.5.1"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "http-server": "^0.11.1"
+    }
+}
